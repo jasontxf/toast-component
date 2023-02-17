@@ -1,7 +1,7 @@
-import { React } from "react";
+import React from "react";
 
-function useEscapeKey() {
-  React.useEffect((callback) => {
+function useEscapeKey(callback) {
+  React.useEffect(() => {
     function handleEscape(e) {
       if (e.code === "Escape") {
         callback();
